@@ -250,22 +250,38 @@
 // }
 // console.log(getExpenseTitleAbove300(expenses));
 
-// let expenses = [
-//   { title: "Manchuriya", amount: 500, category: "Food" },
-//   { title: "Travel", amount: 300, category: "Travel" },
-//   { title: "Movie", amount: 700, category: "Entertainment" },
-//   { title: "Lunch", amount: 400, category: "Food" },
-//   { title: "Bus", amount: 200, category: "Travel" }
-// ];
+let expenses = [
+  { title: "food", amount: 500, category: "Food" },
+  { title: "Travel", amount: 300, category: "Travel" },
+  { title: "Movie", amount: 700, category: "Entertainment" },
+  { title: "Lunch", amount: 400, category: "Food" },
+  { title: "Bus", amount: 200, category: "Travel" }
+];
 
 // function getFoodExpenseTitleAbove400(expense){
 //     let result = expense
-//     .filter(e => {
-//         if(e.title === "Food" && e.amount > 400){
-//             return 
-//         }
-//     })
-//     // .map(e => e.title);
+//     .filter(e => e.category === "Food" && e.amount > 400)
+//     .map(e => e.title);
 //     return result;
 // }
 // console.log(getFoodExpenseTitleAbove400(expenses));
+
+// function getHighestExpense(expense){
+//     let highestExpense = expense.reduce((acc, curr) => {
+//         if(acc < curr.amount){
+//             acc = curr.amount;
+//         }
+//         return acc;
+//     },0)
+//     return highestExpense;
+// }
+// console.log(getHighestExpense(expenses))
+
+// let amounts = [500, 300, 700, 400, 200];
+// let highest = amounts.reduce((acc, curr) => {
+//     if(acc < curr){
+//         acc = curr
+//     }
+//     return acc;
+// }, 0)
+// console.log(highest)
