@@ -176,3 +176,96 @@
 // });
 
 // console.log(result);
+
+// Date => 22/09/2026
+
+// let expenses = [
+//   { title: "Manchuriya", amount: 500, category: "Food" },
+//   { title: "Travel", amount: 300, category: "Travel" },
+//   { title: "Movie", amount: 700, category: "Entertainment" },
+//   { title: "Lunch", amount: 400, category: "Food" },
+//   { title: "Bus", amount: 200, category: "Travel" }
+// ];
+
+// let expense = expenses
+// .reduce((acc, curr) => acc + curr.amount,0)
+// console.log(expense)
+
+// function getTotalExpenses(expense){
+//     let totalAmount = expense.reduce((acc, curr) => acc + curr.amount, 0);
+//     return totalAmount;
+// }
+// console.log(getTotalExpenses(expenses))
+
+// function getFoodCategory(expense){
+//     let foodCategory = expense.filter(e => e.category === "Food");
+//     return foodCategory;
+// }
+// console.log(getFoodCategory(expenses));
+
+// function getTitleExpense(expense){
+//     let titleCategory = expense.map(e => e.title);
+//     return titleCategory;
+// };
+// console.log(getTitleExpense(expenses));
+
+// function getFoodExpenses(expense){
+//     let result = expense
+//     .filter(e => e.category === "Food")
+//     .reduce((acc, curr) => acc + curr.amount, 0)
+//     return result;
+// }
+// console.log(getFoodExpenses(expenses));
+
+// function getTravelExpenseTitle(expense){
+//     let result = expense
+//     .filter(e => e.category === "Travel")
+//     .map(e => e.title);
+//     return result;
+// }
+// console.log(getTravelExpenseTitle(expenses));
+
+// function getExpensesAbove400(expense){
+//     let result = expense.filter(e => e.amount > 400);
+
+//     return result;
+// }
+// console.log(getExpensesAbove400(expenses));
+
+// function getTotalFoodExpense(expense){
+//     let result = expense
+//     .filter(e => e.category === "Food")
+//     .reduce((acc, curr) => acc + curr.amount, 0)
+
+//     return result;
+// }
+// console.log(getTotalFoodExpense(expenses));
+
+// function getExpenseTitleAbove300(expense){
+//     let result = expense
+//     .filter(e => e.amount >= 300)
+//     .map(e => e.title);
+
+//     return result;
+// }
+// console.log(getExpenseTitleAbove300(expenses));
+
+// let expenses = [
+//   { title: "Manchuriya", amount: 500, category: "Food" },
+//   { title: "Travel", amount: 300, category: "Travel" },
+//   { title: "Movie", amount: 700, category: "Entertainment" },
+//   { title: "Lunch", amount: 400, category: "Food" },
+//   { title: "Bus", amount: 200, category: "Travel" }
+// ];
+
+// function getFoodExpenseTitleAbove400(expense){
+//     let result = expense
+//     .filter(e => {
+//         if(e.title === "Food" && e.amount > 400){
+//             return 
+//         }
+//     })
+//     // .map(e => e.title);
+//     return result;
+// }
+// console.log(getFoodExpenseTitleAbove400(expenses));
