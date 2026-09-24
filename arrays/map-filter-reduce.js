@@ -250,13 +250,13 @@
 // }
 // console.log(getExpenseTitleAbove300(expenses));
 
-let expenses = [
-  { title: "food", amount: 500, category: "Food" },
-  { title: "Travel", amount: 300, category: "Travel" },
-  { title: "Movie", amount: 700, category: "Entertainment" },
-  { title: "Lunch", amount: 400, category: "Food" },
-  { title: "Bus", amount: 200, category: "Travel" }
-];
+// let expenses = [
+//   { title: "food", amount: 500, category: "Food" },
+//   { title: "Travel", amount: 300, category: "Travel" },
+//   { title: "Movie", amount: 700, category: "Entertainment" },
+//   { title: "Lunch", amount: 400, category: "Food" },
+//   { title: "Bus", amount: 200, category: "Travel" }
+// ];
 
 // function getFoodExpenseTitleAbove400(expense){
 //     let result = expense
@@ -285,3 +285,50 @@ let expenses = [
 //     return acc;
 // }, 0)
 // console.log(highest)
+
+// if([]){
+//     console.log("Suraj")
+// }
+
+
+    // 24/09/26
+
+    // find()
+
+// let expenses = [
+//   { title: "Food", amount: 500, category: "Food" },
+//   { title: "Travel", amount: 300, category: "Travel" },
+//   { title: "Movie", amount: 700, category: "Entertainment" },
+//   { title: "Lunch", amount: 400, category: "Food" }
+// ];
+
+// function getExpenseByTitle(expense, category){
+//     let result = expense.find(e => e.category === category)
+//     return result;
+
+// }
+
+// console.log(getExpenseByTitle(expenses, "Food"));
+
+
+    // forEach()
+
+    let expenses = [
+    { title: "Food", amount: 500 },
+    { title: "Travel", amount: 300 },
+    { title: "Movie", amount: 700 }
+];
+
+// expenses.forEach(e => {
+//     console.log(e.title)
+// });
+
+// expenses.forEach(e => console.log(e.title));
+
+// expenses.forEach(e => {
+//     console.log(`${e.title} - ${e.amount}`)
+// })
+
+expenses.forEach((e, index) => {
+    console.log(`${index + 1}. ${e.title} - ${e.amount}`);
+})
