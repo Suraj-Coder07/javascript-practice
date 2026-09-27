@@ -313,11 +313,11 @@
 
     // forEach()
 
-    let expenses = [
-    { title: "Food", amount: 500 },
-    { title: "Travel", amount: 300 },
-    { title: "Movie", amount: 700 }
-];
+//     let expenses = [
+//     { title: "Food", amount: 500 },
+//     { title: "Travel", amount: 300 },
+//     { title: "Movie", amount: 700 }
+// ];
 
 // expenses.forEach(e => {
 //     console.log(e.title)
@@ -329,6 +329,88 @@
 //     console.log(`${e.title} - ${e.amount}`)
 // })
 
-expenses.forEach((e, index) => {
-    console.log(`${index + 1}. ${e.title} - ${e.amount}`);
-})
+// expenses.forEach((e, index) => {
+//     console.log(`${index + 1}. ${e.title} - ${e.amount}`);
+// })
+
+// let expenses = [
+//     { title: "Food", amount: 500, category: "Food" },
+//     { title: "Travel", amount: 300, category: "Travel" },
+//     { title: "Movie", amount: 700, category: "Entertainment" },
+//     { title: "Lunch", amount: 400, category: "Food" },
+//     { title: "Bus", amount: 200, category: "Travel" }
+// ];
+
+// let expense = expenses
+// .filter(e => e.category === "Food")
+// .reduce((acc, curr) => acc + curr.amount ,0)
+// console.log(expense);
+
+// let expense = expenses
+// .filter(e => e.category === "Travel" && e.amount > 250)
+// .map(e => e.title);
+// console.log(expense);
+
+// let foodExpense = expenses.filter(e => e.category === "Food");
+// let total = foodExpense.reduce((acc, curr) => acc + curr.amount, 0)
+// let avg = total / foodExpense.length;
+// console.log(avg);
+
+// let movieExpense = expenses.find(e => e.title === "Movie");
+// console.log(movieExpense);
+
+// let movieExpense = expenses.find(e => e.category === "Travel" && e.amount === 300);
+// console.log(movieExpense);
+
+// let expense = expenses.reduce((acc, curr) => {
+//     if(acc < curr.amount){
+//         acc = curr.amount
+//         return acc
+//     }
+//     return acc;
+// }, 0);
+// console.log(expense);
+
+// let expense = expenses.reduce((acc, curr) =>{
+//     if(curr.amount > acc.amount){
+//         return curr;
+//     }
+//     return acc;
+// }, expenses[0])
+// console.log(expense);
+
+// let expenses = [
+//     { title: "Food", amount: 500, category: "Food" },
+//     { title: "Travel", amount: 300, category: "Travel" },
+//     { title: "Movie", amount: 700, category: "Entertainment" },
+//     { title: "Lunch", amount: 400, category: "Food" },
+//     { title: "Bus", amount: 200, category: "Travel" }
+// ];
+
+// let expense = expenses.reduce((acc, curr) =>{
+//     if(acc.amount > curr.amount){
+//         return curr
+//     }
+//     return acc
+// },expenses[0])
+// console.log(expense);
+
+// let expense = expenses
+// .filter(e => e.amount >= 400)
+// .map(e => e.title);
+// console.log(expense);
+
+// let travelcategoryAmount = expenses
+// .filter(e => e.category === "Travel")
+// .reduce((acc, curr) => acc + curr.amount, 0)
+// console.log(travelcategoryAmount);
+
+// let foodCategory = expenses
+// .filter(e => e.category === "Food")
+// .reduce((acc, curr) => {
+//     if(acc.amount < curr.amount){
+//         return curr
+//     }
+//     return acc
+// }, expenses[0])
+// console.log(foodCategory);
